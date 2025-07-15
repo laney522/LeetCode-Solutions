@@ -10,7 +10,7 @@ class Solution {
         int maxProduct = nums[0];
 
         // Pass 1: Left to Right
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++){
             leftProduct *= nums[i];
             maxProduct = Math.max(maxProduct, leftProduct);
 
@@ -21,7 +21,7 @@ class Solution {
         }
 
         // Pass 2: Right to Left
-        for (int i = n - 1; i >= 0; i--) {
+        for (int i = n - 1; i > 0; i--) {
             rightProduct *= nums[i];
             maxProduct = Math.max(maxProduct, rightProduct);
 
